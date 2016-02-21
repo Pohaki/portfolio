@@ -1,0 +1,236 @@
+/*****************************FONT*****************************/
+@font-face {
+    font-family: 'coolvetica';
+    src: url('../fonts/coolvetica/coolvetica_rg-webfont.eot');
+    src: url('../fonts/coolvetica/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coolvetica/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('../fonts/coolvetica/coolvetica_rg-webfont.woff') format('woff'),
+         url('../fonts/coolvetica/coolvetica_rg-webfont.ttf') format('truetype'),
+         url('../fonts/coolvetica/coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kuro';
+    src: url('../fonts/kuro/kuro-regular-webfont.eot');
+    src: url('../fonts/kuro/kuro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kuro/kuro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kuro/kuro-regular-webfont.woff') format('woff'),
+         url('../fonts/kuro/kuro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/kuro/kuro-regular-webfont.svg#kuroregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+  overflow-x: hidden;
+  background: url('../img/small_steps.png');
+}
+.container{
+  width: 80%;
+}
+.container-fluid{
+  padding-left: 9px;
+  padding-right: 9px;
+}
+header{
+  width:110%;
+  z-index: 10000;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);;
+  box-shadow: 0px 2px 26px 3px;
+}
+h1{
+  margin-top: 9%;
+  margin-left: 1%;
+  font-size: 1.7em;
+  font-family: 'coolvetica',sans-serif;
+}
+.hamburger{
+  margin-top: 25px;
+  margin-right: 15%;
+  float: right;
+
+}
+.menu{
+  z-index: 10000;
+  position: fixed;
+  left:-100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);;
+  transition: all 0.8s ease;
+}
+.active{
+  transition: all 0.8s ease;
+  left:0%;
+}
+.close{
+  transition: all 0.3s ease-in;
+  margin-right: 14.8%;
+  margin-top:1%;
+}
+nav ul{
+  height: 100%;
+  margin-top: 2%;
+}
+nav ul li{
+  font-size: 3em;
+  margin-top: 13%;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+li a{
+  color: black;
+  font-family: 'coolvetica',sans-serif;
+}
+li a:hover{
+  color: black;
+}
+#home{
+  height: 85vh;
+}
+#home article{
+  height: 30vh;
+  margin-top: 26vh;
+}
+#home article h2 span{
+  font-family: 'coolvetica',sans-serif;
+  font-size: 2em;
+}
+#home article h2{
+  height: 120px;
+  display: inline-block;
+  background: white;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'coolvetica',sans-serif;
+  font-size: 2.5em;
+}
+#home article p{
+  height: 40%;
+  margin-top: 15px;
+  background: white;
+  font-family: 'coolvetica',sans-serif;
+  padding: 11px;
+}
+#home article p .author{
+  font-size: 4em;
+  margin-right: 5px;
+}
+#about .top{
+  display: inline-block;
+  background-color: white;
+}
+#about div{
+  height: 30vh;
+  margin-top: 3vh;
+}
+#about div h2{
+  text-transform: uppercase;
+  font-size: 4em;
+  font-family: 'coolvetica',sans-serif;
+}
+#about div h3{
+  font-family: 'coolvetica',sans-serif;
+}
+#about div p{
+  text-align: justify;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'kuro',sans-serif;
+}
+#about .do{
+  text-align: center;
+}
+#about .do p{
+  text-align: center;
+}
+#about .do i{
+  font-size: 12em;
+}
+#about .do span{
+  font-size: 5em;
+}
+#about .bottom{
+  height: 75vh;
+  margin-top: 10%;
+  padding: 30px;
+}
+#about .use{
+  background-color: white;
+  height: 40vh;
+}
+#about .use h3{
+  font-size: 3em;
+}
+#about .use li{
+  font-size: 2em;
+  list-style-type:none;
+}
+
+#works{
+  height: 60vh;
+  background: red;
+}
+#works div{
+  height: 30vh;
+  border: 3px solid blue;
+}
+#fond{
+  height: 80vh;
+}
+#fond div{
+  background: white;
+  margin-top: 15%;
+}
+#fond div p{
+  font-family: 'coolvetica',sans-serif;
+  font-size: 4em;
+}
+#recomend{
+  height: 70vh;
+  background: orange;
+}
+#recomend h2{
+  height: 15vh;
+  background: blue;
+  margin-top: 3vh;
+}
+#recomend > div{
+  height: 45vh;
+  margin-left: 3%;
+  background-color: blue;
+}
+#recomend div img{
+  width: 200px;
+  height: 200px;
+  margin-left: 3%;
+}
+#recomend div h3{
+  height: 65px;
+  margin-top: 2%;
+  border: 1px solid orange
+}
+/*#recomend rs{
+  height: 35px;
+  margin-top: 2%;
+  background: red;
+}*/
+#contact{
+  height: 50vh;
+  background-color: darkblue;
+}
+#contact div:first-child{
+  height: 35vh;
+  background-color: red;
+}
+#contact div:nth-child(2){
+  height: 20vh;
+  background-color: orange;
+}
+#contact div:last-child{
+  height: 10vh;
+  background: purple;
+}
