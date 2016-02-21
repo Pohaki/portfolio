@@ -28,7 +28,7 @@
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#works">Works</a></li>
-              <li><a href="#recomend">I recomend also</a></li>
+              <!-- <li><a href="#recomend">I recomend also</a></li> -->
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -38,7 +38,7 @@
         <section id="home" class="row">
           <article class="col-md-9 col-md-push-3">
             <h2><span>Kévin Lachaise,</span> Développeur Web Junior.</h2>
-            <p><i class="fa fa-hashtag fa-5x"></i> <span class="author">Winston Churchill.</span> <span>Un pessimiste voit la difficulté dans chaque opportunité, un optimiste voit l'opportunité dans chaque difficulté.</span></p>
+            <p><i class="fa fa-hashtag fa-5x"></i> <span class="author">Work in progress.</span></p>
           </article>
         </section>
       </div>
@@ -60,7 +60,7 @@
             <p>Lignes de code.</p>
           </div>
           <div class="col-md-4 col-xs-12 do">
-            <i class="fa fa-coffee fa-5x"></i><span>+50</span>
+            <i class="fa fa-coffee fa-5x"></i><span>+35</span>
             <p>Tasse de cafée pour tenir.</p>
           </div>
           <div class="col-md-4 col-xs-12 do">
@@ -240,11 +240,12 @@
     </main>
     <footer id="contact" class="row">
       <div class="col-md-5">
+        <h3>Contact</h3>
         <form action="http://formspree.io/kevin.lachaise@gmail.com"
       method="POST">
-          <input type="text" name="name" placeholder="Entrer votre Nom">
-          <input type="email" name="_replyto" placeholder="Entrer votre E-mail">
-          <textarea name="message" placeholder="Entrer un message"></textarea>
+          <input type="text" id='name' name="name" placeholder="Entrer votre Nom">
+          <input type="email" id='email' name="_replyto" placeholder="Entrer votre E-mail">
+          <textarea name="message" id="message" placeholder="Entrer un message"></textarea>
           <input type="submit" value="Send">
           <input type="hidden" name="_next" value="http://pohaki.github.io/portfolio" >
           <input type="text" name"_gotcha" style="display:none" />

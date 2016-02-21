@@ -109,6 +109,7 @@ li a:hover{
   font-size: 2.5em;
 }
 #home article p{
+  display: inline-block;
   height: 40%;
   margin-top: 15px;
   background: white;
@@ -118,6 +119,10 @@ li a:hover{
 #home article p .author{
   font-size: 4em;
   margin-right: 5px;
+}
+#about{
+  margin-top: -120px;
+  padding-top: 120px;
 }
 #about .top{
   display: inline-block;
@@ -171,8 +176,8 @@ li a:hover{
 }
 
 #works{
-  height: 60vh;
-  background: red;
+  margin-top: -130px;
+  padding-top: 130px;
 }
 #works div{
   height: 30vh;
@@ -182,10 +187,12 @@ li a:hover{
   height: 80vh;
 }
 #fond div{
-  background: white;
   margin-top: 15%;
 }
 #fond div p{
+  background: white;
+  padding-right: 5px;
+  display: inline-block;
   font-family: 'coolvetica',sans-serif;
   font-size: 4em;
 }
@@ -220,11 +227,8 @@ li a:hover{
 }*/
 #contact{
   height: 50vh;
-  background-color: darkblue;
-}
-#contact div:first-child{
-  height: 35vh;
-  background-color: red;
+  background-color: white;
+  box-shadow: -0px -2px 26px 3px;
 }
 #contact div:nth-child(2){
   height: 20vh;
@@ -233,4 +237,28 @@ li a:hover{
 #contact div:last-child{
   height: 10vh;
   background: purple;
+}
+#contact h3{
+  font-family: 'coolvetica',sans-serif;
+  font-size: 4em;
+  margin-left: 2%;
+}
+#contact form{
+  margin-top: 1%;
+  margin-left: 5%;
+}
+#contact form input{
+  height: 40px;
+  width: 80%;
+  margin-top: 7px;
+  padding: 5px;
+  border: 2px solid black;
+  outline-style:1px solid black;
+}
+#contact form textarea{
+  height: 100px;
+  width: 80%;
+  padding: 5px;
+  border: 2px solid black;
+  margin-top: 12px;
 }
