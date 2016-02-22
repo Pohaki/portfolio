@@ -230,14 +230,20 @@ li a:hover{
   background-color: white;
   box-shadow: -0px -2px 26px 3px;
 }
-#contact div:nth-child(2){
-  height: 20vh;
-  background-color: orange;
+
+#contact .rs a{
+  display: inline-block;
+  color: black;
+  margin-top: 5%;
+  margin-left:45px;
 }
-#contact div:last-child{
-  height: 10vh;
-  background: purple;
+#contact .rs a:hover{
+  display: inline-block;
+  color: rgb(70, 70, 70);;
+  margin-top: 4.70%;
+  transition: all 0.5s ease;
 }
+
 #contact h3{
   font-family: 'coolvetica',sans-serif;
   font-size: 4em;
