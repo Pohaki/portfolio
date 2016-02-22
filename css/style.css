@@ -86,6 +86,7 @@ li a{
 }
 li a:hover{
   color: black;
+  text-decoration: underline;
 }
 #home{
   height: 85vh;
@@ -174,14 +175,68 @@ li a:hover{
   font-size: 2em;
   list-style-type:none;
 }
-
 #works{
   margin-top: -130px;
   padding-top: 130px;
 }
 #works div{
-  height: 30vh;
-  border: 3px solid blue;
+  height: 250px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.project:first-child{
+    background-image: url('../img/retro_pixel.png');
+}
+.project:nth-child(2){
+    background-image: url('../img/nwa.png');
+}
+.project:nth-child(3){
+    background-image: url('../img/find_my_number.png');
+}
+.project:nth-child(4){
+    background-image: url('../img/cours_sass.png');
+}
+.project:nth-child(5){
+    background-image: url('../img/zombie_News.png');
+}
+.project:nth-child(6){
+    background-image: url('../img/mondrian.png');
+}
+.project{
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+}
+.appear{
+  position: absolute;
+  transition: all 0.3s ease;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.project:hover .appear{
+  transition: all 0.4s ease;
+  left:0;
+}
+.appear h5{
+  font-family: 'coolvetica',sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color:black;
+}
+.appear p{
+  font-family: 'kuro',sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+}
+.project a{
+  text-decoration: none;
+}
+.project a:hover{
+  text-decoration: none;
 }
 #fond{
   height: 80vh;
